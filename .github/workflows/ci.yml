@@ -50,5 +50,8 @@ jobs:
       - name: Run migration
         run: make migrateup
 
+      - name: Run tidy
+        run: go mod tidy
+
       - name: Test
         run: make test
